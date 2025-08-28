@@ -91,15 +91,10 @@ En OpenWebUI, simplemente selecciona el modelo y chatea.
 
 ---
 
-## 💾 Persistencia y backup
+## 💾 Persistencia 
 - Modelos: volumen `ollama_models` montado en `/root/.ollama`
 - Datos UI: volumen `openwebui_data` en `/app/backend/data`
 
-Backup rápido de modelos a un tar:
-```bash
-docker run --rm -v ollama_models:/data -v "$PWD":/backup alpine \
-  sh -c 'tar czf /backup/ollama_models.tgz -C / data'
-```
 
 ---
 
