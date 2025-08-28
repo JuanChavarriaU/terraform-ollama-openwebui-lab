@@ -9,6 +9,7 @@ terraform {
 
 provider "docker" {}
 
+
 variable "ollama_port" {
   type    = number
   default = 11434
